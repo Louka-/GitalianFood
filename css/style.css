@@ -4,7 +4,10 @@
     --col-green: #69BB63;
     --col-bleu: #4394FF;
 }
-h2{font-family: 'Times New Roman', Times, serif;
+
+h2
+{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: black;
 
