@@ -9,6 +9,7 @@
 
 .navbar {
     background: var(--col-red);
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .navbar img {
@@ -54,6 +55,7 @@ h1
 .partage {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background: var(--col-green);
 }
 
 .footer {
@@ -68,7 +70,7 @@ h1
 
 .formulaire {
     background: var(--col-light);
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .newsletter {
