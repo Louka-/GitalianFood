@@ -10,10 +10,20 @@
 .navbar {
     background: var(--col-red);
 }
+
+.navbar img {
+    width: 70px;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+}
+
 h1
 {
+    padding-top: 2rem;
     font-family: 'Luckiest Guy', cursive;
-    font-size: 30px;
+    font-size: 35px;
     color: black;
 
 }
@@ -69,4 +79,47 @@ h1
 
 .button {
     padding-top: 2rem;
+}
+
+.p1{
+    height: 100px;
+}
+
+.volet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 87%);
+    background:#f6151598;
+    width: 100%;
+    height: 100%;  
+    transform: translateX(0%);
+    transform: translateY(100%);
+    transition: .3s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.chemin {
+    width: 500px;
+    height: 350px;
+    border: 10px solid #69BB63;
+    overflow: hidden;
+    position: relative;
+}
+
+.chemin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.chemin:hover img {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.chemin:hover .volet {
+    transform: translateX(0);
+    transform: translateY(0);
 }
