@@ -30,7 +30,9 @@
                         aria-disabled="true">Contact</a>
 
                         <form name="searchForm" class="form-inline">
-                            <input id="recherche" class="form-control mr-sm-2 mx-3" type="search" onclick="readForm(searchForm);" placeholder="Trouver une recette...">
+                            <input name="recherche" class="form-control mr-sm-2 mx-3" type="search"  placeholder="Trouver une recette...">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="traitementSearch(readForm(searchForm));">Search</button>
+
                         </form>
 
                         </script>
