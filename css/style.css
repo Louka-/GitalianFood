@@ -3,3 +3,9 @@ h2{font-family: 'Times New Roman', Times, serif;
     color: black;
 
 }
+
+.py-5
+{
+    padding-top: 5rem;
+    padding-left: 2rem;
+}
