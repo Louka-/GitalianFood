@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 :root {
     --col-red: #F61515;
     --col-light: #F7F2FB;
@@ -5,15 +7,24 @@
     --col-bleu: #4394FF;
 }
 
-body
-{
-
+.navbar {
+    background: var(--col-red);
+    font-family: 'Luckiest Guy', cursive;
 }
 
-h2
+.navbar img {
+    width: 70px;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+}
+
+h1
 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    padding-top: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
     color: black;
 
 }
@@ -32,6 +43,54 @@ h2
 {
     padding-top: 5rem;
     padding-left: 2rem;
+}
+
+.bg-red {
+    background: var(--col-red);
+    color: var(--col-light);
+}
+
+.bg-green {
+    background: var(--col-green);
+    color: var(--col-light);
+
+}
+
+.btn-up img {
+    width: 5rem;
+    height: 6rem;
+    margin-right: 15PX;
+}
+
+.partage {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: var(--col-green);
+}
+
+.footer {
+    padding: 2rem;
+    background: var(--col-bleu);
+}
+
+.map {
+    background: var(--col-green);
+    padding-top: 2rem;
+}
+
+.formulaire {
+    background: var(--col-light);
+    padding-top: 1rem;
+}
+
+.newsletter {
+    background: var(--col-red);
+    padding-top: 2rem;
+
+}
+
+.button {
+    padding-top: 2rem;
 }
 
 .p1{
