@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-red fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="#">Gitalian Food</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -22,8 +22,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    <a class="nav-link" href="#">Découvrir les recettes</a>
-                    <a class="nav-link" href="#">Partagez vos recettes</a>
+                    <a class="nav-link" href="#list">Découvrir les recettes</a>
+                    <a class="nav-link" href="#partage">Partagez vos recettes</a>
                     <a class="nav-link" href="#">Newsletter</a>
                     <a class="nav-link" href="https://colorlib.com/etc/cf/ContactFrom_v5/index.html" tabindex="-1"
                         aria-disabled="true">Contact</a>
@@ -36,8 +36,8 @@
 
     <section id="Slogan" class="vh-100">
         <div class="row py-5 position-relative">
-            <div class=" d-flex justify-content-start col-12 position-relative top-50 start-0">
-                <h2 class="mt-3">Fork me!</h2>
+            <div class=" d-flex justify-content-center col-12 position-relative top-50 start-0">
+                <h1 class="mt-3">ON TE FORK DES RECETTES VEGAN</h1>
             </div>
         </div>
     </section>
@@ -69,45 +69,76 @@
 
 
     <section id="list"></section>
-    <section id="partage"></section>
-    <section id="footer"></section>
-
-    </div>
-    </div>
 
 
-    <section class="footer-fluid">
-        <iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6563.149419840426!2d135.4279608!3d34.665442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605fe25303252aa!2sUniversal%20Studios%20Japan!5e0!3m2!1sfr!2sfr!4v1616669398681!5m2!1sfr!2sfr"
-            width="400" height="250" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
-        </p>
-           L'adresse: 554-0031
-           2-1-33, Sakurajima, Konohana-ku, Osaka-shi, Osaka Prefecture</p>
-        
-        <p>
-        <div class="formulaire">
-        <h3>Nous contacter</h3>
-        <form action="formulaire" method="post">
-            <form action="/ma-page-de-traitement" method="post">
-                <div>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="user_name">
-                </div>
-                <div>
-                    <label for="name">Prénom :</label>
-                    <input type="text" id="name" name="user_name">
-                </div>
-                <div>
-                    <label for="mail">e-mail :</label>
-                    <input type="email" id="mail" name="user_mail">
-                </div>
-                <div>
-                    <label for="msg">Message :</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </div>
-        </div>
-            </form>
+    <section id="partage" class="partage justify-content-center text-center">
+        <a href="https://colorlib.com/etc/cf/ContactFrom_v5/index.html" class="btn bg-red rounded-pill px-3 py-2 fw-bold">Arrête de jouer, et partage ta recette !</a>
     </section>
+    <br>
+    <section class="footer">
+        <div class="row d-flex col-12 justify-content-center text-center">
+            <div class="map col-4"><iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6563.149419840426!2d135.4279608!3d34.665442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605fe25303252aa!2sUniversal%20Studios%20Japan!5e0!3m2!1sfr!2sfr!4v1616669398681!5m2!1sfr!2sfr"
+                width="400" height="250" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+               L'adresse: 554-0031
+               2-1-33, Sakurajima, Konohana-ku, Osaka-shi, Osaka Prefecture
+            </p>
+            </div>
+
+            <div class="formulaire col-4 ">
+            <h3>Nous contacter</h3>
+            <br>
+            <br>
+            <form action="formulaire d-flex justify-content-end" method="post">
+                <form action="/ma-page-de-traitement" method="post">
+                    <div>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="name">Prénom :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">e-mail :</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="" class="btn bg-red rounded-pill px-3 py-2 fw-bold">Git Push</a>
+                    </div>
+            </div>
+            </form>  
+            <div class="newsletter col-4">
+                <h2>Abonnes toi à la Newsletter et à toi les futures recettes de Gitalian Food !</h2>
+                <br>
+                <br>
+                <form action="newsletter d-flex justify-content-end" method="post">
+                    <form action="/ma-page-de-traitement" method="post">
+                        <div>
+                            <label for="mail">Git Push ton e-mail :</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </div>
+                        <div class="button">
+                            <a href="" class="btn bg-green rounded-pill px-3 py-2 fw-bold">S'abonner</a>
+                        </div>
+                </div>
+                </form>  
+        </div>
+    </section>
+
+    <section class="btn-up d-flex justify-content-end fixed-bottom">
+        <a href="#Slogan" class="top"><img src="./img/mario.png.crdownload" alt=""></a>
+    </section>
+
+
+
+
+
 </body>
 
 </html>
