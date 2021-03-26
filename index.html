@@ -15,7 +15,6 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-red fixed-top borderbot">
         <div class="container-fluid px-5">
-            <img src="./img/Logo-intro/logo2.jpg" alt="">
             <a class="navbar-brand" href="#">Gitalian Food</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +48,8 @@
 
     <section id="Slogan" class="p1">
         <div class="row py-5 position-relative">
-            <div class=" d-flex justify-content-center col-12 position-relative top-50 start-0">
-                <h1 class="mt-3">ON TE FORK DES RECETTES VEGAN</h1>
+            <div class=" d-flex justify-content-start col-12 position-relative top-50 start-0">
+                <h2 class="mt-3">Fork me!</h2>
             </div>
         </div>
     </section>
@@ -95,6 +94,39 @@
         </a>
 
     </div>
+    <section id="list" class="container bg-green py-5">
+        <div class="row col-12 d-flex justify-content-around bg-light">
+            <div class="col-6 py-5">
+                <h1>Lasagne aux épinards</h1>
+                <p class="text-center">Voici une recette de lasagne aux épinards version végétale, simple et rapide qui
+                    plaira aussi bien au
+                    grands qu'aux petis.
+                    Une facon de retrouver les saveurs et textures de ce classique de la cuisine italienne.</p>
+
+                <h2>Ingrédients pour 4 personnes :</h2>
+                <ul>
+                    <li>500 Grammes épinards congeles</li>
+                    <li>1 Briquette de crème vegetale</li>
+                    <li>500 Gr de lait de soja</li>
+                    <li>3 Cs de farine blanche</li>
+                    <li>3 Cs d'huile d'olive</li>
+                    <li>1 bouillon de légumes</li>
+                    <li>Livre et noix luscade</li>
+                </ul>
+                <h2>préparation : 35 minutes</h2>
+
+                <figure class="chemin">
+                    <img src="./img/recette epinard/lasagnes-aux-epinards-vegan.jpg" alt="">
+                    <div class="volet">
+                        <p>Décongeler les epinards. Mettre les épinards dans le Closed lid avec 1/2 gobelet d'eau.
+                            1O min 90° vit.1. Puis verser la briquette de lait végétal et mélanger 20 sec vit 8.
+                            Réserver.
+                            Faire la bechamel. Mettre tous les ingrédients 7 min 90° vit 4.
+                            Mélanger la moitié de la Bechamel avec la préparation aux epinards.
+                            Monter les lasagnes en terminant par la Bechamel restante.
+                            Enfourner pour 20 minutes a 200 degrés.</p>
+                    </div>
+                </figure>
 
     <script>
         $('.carousel').carousel({
@@ -476,11 +508,20 @@
                 <form action="newsletter d-flex justify-content-end" method="post">
                     <form action="/ma-page-de-traitement" method="post">
                         <div>
-                            <label for="mail">Git Push ton e-mail :</label>
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="name">Prénom :</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="mail">e-mail :</label>
                             <input type="email" id="mail" name="user_mail">
                         </div>
-                        <div class="button">
-                            <a href="" class="btn bg-green rounded-pill px-3 py-2 fw-bold">S'abonner</a>
+                        <div>
+                            <label for="msg">Message :</label>
+                            <textarea id="msg" name="user_message"></textarea>
                         </div>
             </div>
             </form>
