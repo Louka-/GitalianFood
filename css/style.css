@@ -1,10 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+
+
+
+
+
 :root {
     --col-red: #F61515;
     --col-light: #F7F2FB;
     --col-green: #69BB63;
     --col-bleu: #4394FF;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--col-green);
+}
+
+#carouselExemple {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -37,24 +62,32 @@ h1
 .bg-light
 {
     background-color: var(--col-light);
+    border: solid;
+    border-color: black;
 }
 
 .py-5
 {
     padding-top: 5rem;
     padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
 }
 
 .bg-red {
     background: var(--col-red);
-    color: var(--col-light);
-}
-
-.bg-green {
-    background: var(--col-green);
-    color: var(--col-light);
 
 }
+
+.bg-Mario{
+    background-image: url(../img/Background/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
 
 .btn-up img {
     width: 5rem;
@@ -63,9 +96,9 @@ h1
 }
 
 .partage {
-    padding-top: 3rem;
+    padding-top: 3rem ;
     padding-bottom: 3rem;
-    background: var(--col-green);
+    background-color: none;
 }
 
 .footer {
@@ -73,9 +106,15 @@ h1
     background: var(--col-bleu);
 }
 
+.bg-blue-border{
+    background-color: var(--col-bleu);
+    border: solid;
+    border-color: black;
+}
+
 .map {
     background: var(--col-green);
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .formulaire {
@@ -120,7 +159,8 @@ h1
 .chemin {
     width: 500px;
     height: 350px;
-    border: 10px solid #F61515;
+    border: 10px solid var(--col-light);
+    border-radius: 0.8rem;
     overflow: hidden;
     position: relative;
 }
@@ -139,4 +179,28 @@ h1
 .chemin:hover .volet {
     transform: translateX(0);
     transform: translateY(0);
+}
+
+.cadre
+{
+    width: 100px;
+    height: 30px;
+}
+
+.cadre2
+{
+    width: 200px;
+    height: 60px;
+}
+
+.borderbot
+{
+    border-bottom:solid;
+    border-color: black;
+}
+
+.border-car
+{
+    border-radius: 0.8rem;
+    border: 10px black;
 }
