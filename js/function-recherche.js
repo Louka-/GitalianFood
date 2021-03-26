@@ -16,3 +16,4 @@ function traitementSearch(params) {
     document.location.href=`https://www.google.com/search?q=site:https://vegan-pratique.fr/+${params}`;
 
 }
+ 
